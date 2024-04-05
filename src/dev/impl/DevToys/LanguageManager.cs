@@ -29,6 +29,7 @@ namespace DevToys
         private readonly Base64ImageEncoderDecoderStrings _base64imageencoderdecoder = new Base64ImageEncoderDecoderStrings();
         private readonly CertificateEncoderDecoderStrings _certificateencoderdecoder = new CertificateEncoderDecoderStrings();
         private readonly CheckSumGeneratorStrings _checksumgenerator = new CheckSumGeneratorStrings();
+        private readonly ChmodCalculatorStrings _chmodcalculator = new ChmodCalculatorStrings();
         private readonly ColorBlindnessSimulatorStrings _colorblindnesssimulator = new ColorBlindnessSimulatorStrings();
         private readonly ColorPickerStrings _colorpicker = new ColorPickerStrings();
         private readonly CommonStrings _common = new CommonStrings();
@@ -94,6 +95,11 @@ namespace DevToys
         /// Gets the <see cref="CheckSumGeneratorStrings"/>.
         /// </summary>
         public CheckSumGeneratorStrings CheckSumGenerator => _checksumgenerator;
+
+        /// <summary>
+        /// Gets the <see cref="ChmodCalculatorStrings"/>.
+        /// </summary>
+        public ChmodCalculatorStrings ChmodCalculator => _chmodcalculator;
 
         /// <summary>
         /// Gets the <see cref="ColorBlindnessSimulatorStrings"/>.
@@ -565,6 +571,46 @@ namespace DevToys
         /// Gets the resource HashesMismatch.
         /// </summary>
         public string HashesMismatch => _resources.GetString("HashesMismatch");
+    }
+
+    public class ChmodCalculatorStrings : ObservableObject
+    {
+        private readonly ResourceLoader _resources = ResourceLoader.GetForViewIndependentUse("ChmodCalculator");
+
+        /// <summary>
+        /// Gets the resource AccessibleName.
+        /// </summary>
+        public string AccessibleName => _resources.GetString("AccessibleName");
+
+        /// <summary>
+        /// Gets the resource Description.
+        /// </summary>
+        public string Description => _resources.GetString("Description");
+
+        /// <summary>
+        /// Gets the resource MenuDisplayName.
+        /// </summary>
+        public string MenuDisplayName => _resources.GetString("MenuDisplayName");
+
+        /// <summary>
+        /// Gets the resource PermissionsDescription.
+        /// </summary>
+        public string PermissionsDescription => _resources.GetString("PermissionsDescription");
+
+        /// <summary>
+        /// Gets the resource PermissionsTitle.
+        /// </summary>
+        public string PermissionsTitle => _resources.GetString("PermissionsTitle");
+
+        /// <summary>
+        /// Gets the resource SearchDisplayName.
+        /// </summary>
+        public string SearchDisplayName => _resources.GetString("SearchDisplayName");
+
+        /// <summary>
+        /// Gets the resource SearchKeywords.
+        /// </summary>
+        public string SearchKeywords => _resources.GetString("SearchKeywords");
     }
 
     public class ColorBlindnessSimulatorStrings : ObservableObject
@@ -2604,7 +2650,7 @@ namespace DevToys
         /// Gets the resource SpecialCharacters.
         /// </summary>
         public string SpecialCharacters => _resources.GetString("SpecialCharacters");
-        
+
         /// <summary>
         /// Gets the resource ExcludeCharacters.
         /// </summary>

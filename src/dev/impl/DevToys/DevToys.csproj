@@ -107,6 +107,8 @@
     <Compile Include="UI\MainMenuNavigationViewMenuItemSelector.cs" />
     <Compile Include="ViewModels\Tools\AllTools\AllToolsToolProvider.cs" />
     <Compile Include="ViewModels\Tools\AllTools\AllToolsToolViewModel.cs" />
+    <Compile Include="ViewModels\Tools\Converters\ChmodCalculator\ChmodCalculatorToolProvider.cs" />
+    <Compile Include="ViewModels\Tools\Converters\ChmodCalculator\ChmodCalculatorToolViewModel.cs" />
     <Compile Include="ViewModels\Tools\Converters\ConvertersGroupToolProvider.cs" />
     <Compile Include="ViewModels\Tools\Converters\CronParser\CronParserToolProvider.cs" />
     <Compile Include="ViewModels\Tools\Converters\CronParser\CronParserToolViewModel.cs" />
@@ -181,6 +183,9 @@
     <Compile Include="ViewModels\Tools\Text\XmlValidator\XmlValidatorToolViewModel.cs" />
     <Compile Include="Views\Tools\AllTools\AllToolsToolPage.xaml.cs">
       <DependentUpon>AllToolsToolPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\Converters\ChmodCalculator\ChmodCalculatorToolPage.xaml.cs">
+      <DependentUpon>ChmodCalculatorToolPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Tools\Converters\CronParser\CronParserToolPage.xaml.cs">
       <DependentUpon>CronParserToolPage.xaml</DependentUpon>
@@ -592,6 +597,11 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <PRIResource Include="Strings\en-US\ChmodCalculator.resw" />
+    <Page Include="Views\Tools\Converters\ChmodCalculator\ChmodCalculatorToolPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\Tools\EncodersDecoders\CertificateEncoderDecoder\CertificateEncoderDecoderToolPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
